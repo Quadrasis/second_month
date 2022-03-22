@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+body {
+    margin: 0 auto;
+    background-color: #FFF8DC,;
+    background-color: #F0FFF0;
+  }
+  canvas{
+      position:absolute;
+  }
+  #container{
+      height:100%;
+      width:100%;
+  }
+  button{
+      background-color: #B8860B;
+      color:#F5FFFA;
+  }
