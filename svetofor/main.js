@@ -1,6 +1,6 @@
-let expr=prompt(`цвет?`)
+let expr=prompt(`цвет пример:red`)
 switch (expr) {
-    case "красный":
+    case "red":
       document.getElementsByClassName('red')[0].style.background = "red";
         document.getElementsByClassName('gif')[0].style.display = "none";
            document.getElementsByClassName('utka')[0].style.display = "none";
@@ -8,7 +8,7 @@ switch (expr) {
             document.getElementsByClassName('go')[0].style.display = "none";
     alert("стоп");
     break;
-  case "желтый":
+  case "yellow":
   document.getElementsByClassName('yellow')[0].style.background = "yellow";
    document.getElementsByClassName('gif')[0].style.display = "none";
       document.getElementsByClassName('utka')[0].style.display = "none";
@@ -16,7 +16,7 @@ switch (expr) {
 
    alert("готовься");
     break;
-  case "зеленый":
+  case "green":
   document.getElementsByClassName('green')[0].style.background= "green";
    document.getElementsByClassName('img')[0].style.display = "none";
       document.getElementsByClassName('utka')[0].style.display = "none";
