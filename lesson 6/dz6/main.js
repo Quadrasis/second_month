@@ -20,12 +20,35 @@ const obj2 = {
 }
 console.log(obj2); 
 
-const getFullName = () => {
-  return "First_name: " + user.first_name + "\n" + "Last_name: " + user.last_name;
-    return 'First_name:'
+const list = [];
+
+const name = document.querySelector("#name")
+const knopka = document.querySelector("#knopka")
+
+function render() {
+    const MainDiv = document.createElement('div');
+    MainDiv.setAttribute("class", "list");
+    for(let i = 0; i < list.length; i++ ) {
+        const divList = document.createElement('div');
+        divList.setAttribute("class", "block");
+        const p = document.createElement("p");
+        p.innerHTML = list[i].text;
+        divList.append(p);
+        MainDiv.append(divList);
+    }
+
+    const form = document.querySelector(".inner");
+
+    document.querySelector(".list").remove();
+    form.append(MainDiv)
+
 }
-const user = {
-    first_name: 'Jack',
-    last_name: 'Barbaro'
+knopka.onclick = function() {
+    const obj = {
+        id: list.length,
+        text: name.value+" Привет друг"
+    }
+    this.append(list);
+    list.push(obj);
+    render()
 }
-getFullName()
